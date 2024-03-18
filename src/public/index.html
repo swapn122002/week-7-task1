@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Management</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Student Task Management</h1>
+    <div class="entryform">
+      <form id="taskForm">
+        <label for="courseId">Course ID:</label>
+        <input type="text" id="courseId" name="courseId" required placeholder="Enter Course Id"><br>
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" name="taskName" required placeholder="Enter Task name"><br>
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required><br>
+        <label for="details">Details:</label><br>
+        <textarea id="details" name="details" placeholder="Enter Details"></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="search">
+      <input type="text" id="courseIdInput" name="courseIdInput" placeholder="Search tasks by course Id">
+      <button id="searchButton">Search</button>
+    </div>
+  
+    <div id="taskList"></div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
